@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.justdoit.arcmenu.ArcLayout
+        android:id="@+id/arcLayout"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        custom:childSize="@dimen/dp750_44"
+        custom:fromDegrees="270.0"
+        custom:toDegrees="360.0"/>
+
+    <FrameLayout
+        android:id="@+id/controlLayout"
+        android:layout_width="@dimen/dp750_90"
+        android:layout_height="@dimen/dp750_90"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/start_menu_icon_bg">
+
+        <ImageView
+            android:id="@+id/hintView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:duplicateParentState="true"
+            android:src="@mipmap/start_menu_icon"/>
+    </FrameLayout>
+
+</merge>
