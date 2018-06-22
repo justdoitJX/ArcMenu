@@ -65,7 +65,7 @@ class ArcMenu @JvmOverloads constructor(context: Context, attrs: AttributeSet? =
         }
     }
 
-    fun packUpMenu() {
+    private fun packUpMenu() {
         postDelayed({
             hintView.startAnimation(createHintSwitchAnimation(true))
             arcLayout.switchState(true, 1)
