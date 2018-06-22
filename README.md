@@ -3,6 +3,7 @@
 
 ## 截图
 <a href="gif/arcmenu.gif"><img src="art/arcmenu.gif" width="30%"/></a>
+![1](./arcmenu.gif)
 
 ## 感谢以下开源项目
 - [ArcMenu](https://github.com/daCapricorn/ArcMenu)  (在这个库的基础上做了些优化，并改为kotlin)

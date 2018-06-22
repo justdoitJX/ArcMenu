@@ -1,6 +1,3 @@
-import com.android.build.gradle.ProguardFiles.getDefaultProguardFile
-import org.gradle.internal.impldep.com.amazonaws.PredefinedClientConfigurations.defaultConfig
-
 plugins {
     id("com.android.application")
     id("kotlin-android")
@@ -31,11 +28,13 @@ android {
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     implementation("com.android.support:appcompat-v7:27.1.1")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.2.41")
+    implementation("com.jakewharton.rxbinding2:rxbinding:2.0.0")
     implementation("com.fpliu:Android-CustomDimen:1.0.0")
+
     testImplementation("junit:junit:4.12")
     androidTestImplementation("com.android.support.test:runner:1.0.2")
     androidTestImplementation("com.android.support.test.espresso:espresso-core:3.0.2")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.2.41")
-    implementation("com.jakewharton.rxbinding2:rxbinding:2.0.0")
+
 }
 
